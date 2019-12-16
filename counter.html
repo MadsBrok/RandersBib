@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+
+<input type="button" value="Jeg vandt!" id="countButtonWins" />
+<input type="button" value="Jeg tabte." id="countButtonLosses" />
+
+
+    <p>Du har vundet <span id="displayCount">0</span> gange.</p>
+    <p>Du har tabt <span id="displayCount2">0</span> gange.</p>
+
+
+    <script type="text/javascript">
+
+      var count = 0;
+      var button = document.getElementById("countButtonWins");
+      var display = document.getElementById("displayCount");
+
+      var count2 = 0;
+      var button2 = document.getElementById("countButtonLosses");
+      var display2 = document.getElementById("displayCount2");
+
+      button.onclick = function(){
+        count++;
+        display.innerHTML = count;
+
+      button.onclick = function(){
+        count2++;
+        display.innerHTML = count2;
+      }
+  	}
+
+
+    </script>
+
+</body>
+</html>
+
